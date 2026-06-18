@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ============================== META ============================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VarAInce — Where Data Meets Curiosity | AI & DS Club, BMSCE</title>
+  <meta name="description"
+    content="VarAInce is the official AI & Data Science club of B.M.S. College of Engineering, Bengaluru. Hackathons, ML workshops, and inter-college events run by students of the AI & DS department." />
+
+  <!-- Canonical / Open Graph — replace placeholder domain once deployed -->
+  <!-- REPLACE: swap https://varaince.example for the live production domain -->
+  <link rel="canonical" href="https://varaince.example/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VarAInce — Where Data Meets Curiosity" />
+  <meta property="og:description"
+    content="The official AI & Data Science club of BMSCE. Hackathons, ML workshops, and inter-college events." />
+  <meta property="og:image" content="assets/img/og-image.png" />
+  <meta property="og:url" content="https://varaince.example/index.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/img/varaince-logo.png" />
+
+  <!-- ============================== FONTS ============================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- ============================== STYLES ============================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="home">
+  <!-- ============================== PRELOADER ============================== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-logo"><img src="assets/img/varaince-logo.png" alt="" width="72" height="72" /></div>
+    <div class="preloader-line"></div>
+    <span class="preloader-text">VarAInce</span>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================== NAVIGATION ============================== -->
+  <header>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-left" aria-label="VarAInce — home">
+          <span class="nav-logo-mark"><img src="assets/img/varaince-logo.png" alt="" width="40" height="40" /></span>
+          <span class="nav-wordmark">VarAInce</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav-link="home">Home</a></li>
+          <li><a href="events.html" class="nav-link" data-nav-link="events">Events</a></li>
+          <li><a href="about.html" class="nav-link" data-nav-link="about">About</a></li>
+          <li><a href="team.html" class="nav-link" data-nav-link="team">Team</a></li>
+          <li><a href="contact.html" class="nav-link" data-nav-link="contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <div class="nav-divider" aria-hidden="true"></div>
+          <a class="nav-bmsce" href="https://bmsce.ac.in" target="_blank" rel="noopener"
+            aria-label="B.M.S. College of Engineering website (opens in new tab)">
+            <img src="assets/img/bmsce-logo.png" alt="B.M.S. College of Engineering" height="38" style="opacity:0.85" />
+          </a>
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu panel -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" data-nav-link="home">Home</a>
+      <a href="events.html" data-nav-link="events">Events</a>
+      <a href="about.html" data-nav-link="about">About</a>
+      <a href="team.html" data-nav-link="team">Team</a>
+      <a href="contact.html" data-nav-link="contact">Contact</a>
+      <a class="nav-bmsce-mobile" href="https://bmsce.ac.in" target="_blank" rel="noopener">
+        <img src="assets/img/bmsce-logo.png" alt="" height="26" /> B.M.S. College of Engineering
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-aurora">
+          <span class="aurora-blob is-teal"></span>
+          <span class="aurora-blob is-blue"></span>
+        </div>
+        <div class="hero-grid"></div>
+        <div class="hero-network" id="heroNetwork">
+          <svg class="network-svg" id="networkSvg"></svg>
+        </div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">AI &amp; Data Science Club · BMSCE</p>
+        <h1 class="hero-wordmark gradient-text">VarAInce</h1>
+        <p class="hero-tagline">Where Data Meets Curiosity</p>
+        <p class="hero-sub">Variance, with AI folded inside it — a club for people who'd rather measure the spread in
+          the data than just admire the average. Built by the AI &amp; DS department, run by its students.</p>
+        <div class="hero-actions">
+          <a href="events.html" class="btn btn-primary">View Events</a>
+          <a href="https://www.instagram.com/varaince_bmsce/" target="_blank" rel="noopener"
+            class="btn btn-secondary">Follow on Instagram</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ============================== WHAT WE DO ============================== -->
+    <section class="section" id="what-we-do">
+      <div class="container">
+        <div class="section-head fade-in">
+          <p class="eyebrow">What We Do</p>
+          <h2 class="section-title">Three ways we get students building</h2>
+          <p class="section-sub">Not a lecture series. Every pillar below ends with something a student actually
+            shipped.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="8 8 4 12 8 16" />
+                <polyline points="16 8 20 12 16 16" />
+                <line x1="14" y1="5" x2="10" y2="19" />
+              </svg>
+            </div>
+            <h3 class="card-title">Hackathons</h3>
+            <p class="card-text">From idea to a working demo in one day. CodeForge put 122 builders through an "AI for
+              Productivity" sprint with mentors on the floor and a live judging panel at the end.</p>
+          </article>
+
+          <article class="card fade-in fade-in-delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M9 3h6" />
+                <path d="M10 3v5.5L5.5 17a2 2 0 0 0 1.7 3h9.6a2 2 0 0 0 1.7-3L14 8.5V3" />
+                <path d="M7.5 14h9" />
+              </svg>
+            </div>
+            <h3 class="card-title">Workshops</h3>
+            <p class="card-text">Hands-on sessions that pick up where the syllabus stops. ML Arena taught regression
+              through classification on a real Kaggle stock-price dataset, not a slide deck.</p>
+          </article>
+
+          <article class="card fade-in fade-in-delay-2">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+              </svg>
+            </div>
+            <h3 class="card-title">Inter-college Events</h3>
+            <p class="card-text">We don't just attend tech fests — we run them. AI-VERSE brought students from across
+              Bengaluru together under one AI &amp; ML banner, guest of honor included.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="divider"></div>
+    </div>
+
+    <!-- ============================== STATS BAR ============================== -->
+    <section class="section">
+      <div class="container">
+        <div class="stats-bar fade-in">
+          <div class="stat">
+            <span class="stat-num" data-target="122" data-suffix="+">0</span>
+            <span class="stat-label">Hackathon Participants</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="15000" data-prefix="₹">0</span>
+            <span class="stat-label">Prize Pool</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="3" data-suffix="+">0</span>
+            <span class="stat-label">Major Events</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="1">0</span>
+            <span class="stat-label">Inter-college Fest</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FEATURED EVENT ============================== -->
+    <section class="section" id="featured-event">
+      <div class="container">
+        <div class="section-head fade-in">
+          <p class="eyebrow">Featured Event</p>
+          <h2 class="section-title">CodeForge Hackathon</h2>
+          <p class="section-sub">Our flagship build sprint — one theme, one day, real judges.</p>
+        </div>
+
+        <div class="featured-event fade-in">
+          <div class="featured-grid">
+            <div>
+              <p class="event-date mono">April 4, 2025 · Theme: "AI for Productivity"</p>
+              <p class="mono" style="color:var(--color-text-muted); font-size:0.85rem; margin:0.75rem 0 1.75rem;">9 AM
+                Briefing&nbsp;→&nbsp;Mentored Build&nbsp;→&nbsp;4:30 PM Submission&nbsp;→&nbsp;5–7 PM Final Demos</p>
+
+              <dl class="featured-meta-list">
+                <div class="featured-meta-item">
+                  <dt>Participants</dt>
+                  <dd>122 builders</dd>
+                </div>
+                <div class="featured-meta-item">
+                  <dt>Teams</dt>
+                  <dd>37 teams of 3</dd>
+                </div>
+                <div class="featured-meta-item">
+                  <dt>Prize Pool</dt>
+                  <dd>₹15,000</dd>
+                </div>
+                <div class="featured-meta-item">
+                  <dt>Format</dt>
+                  <dd>Single-day sprint</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:2rem;">
+              <div>
+                <p class="event-outcome-label">Judging Panel</p>
+                <ul class="judges-list">
+                  <li>Prerit Chandra — CEO, Poorit Technologies</li>
+                  <li>Sushant V. Pai — Chief AI Officer, Poorit Technologies</li>
+                  <li>Piyush Mohanty — AI/ML Lead, Explicate Inc.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="event-outcome-label">Winners</p>
+                <ul class="winners-list">
+                  <li><span class="rank-badge">1ST</span>"Dyslexia Math Aide" — Pratyush Thakur, Aryan Raj, Harsh Kumar
+                  </li>
+                  <li><span class="rank-badge">2ND</span>"Smart Inventory Management" — Rahul Hongekar, Bramha
+                    Bajannavar, Abhijna S</li>
+                </ul>
+              </div>
+              <a href="events.html" class="btn btn-secondary" style="align-self:flex-start;">View All Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== INSTAGRAM CTA STRIP ============================== -->
+    <section class="cta-strip">
+      <div class="container">
+        <div class="cta-strip-inner fade-in">
+          <div>
+            <h3>Follow the build-up to the next event</h3>
+            <p>Photos, reels, and announcements before they hit the group chat.</p>
+          </div>
+          <a href="https://www.instagram.com/varaince_bmsce/" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+            </svg>
+            @varaince_bmsce
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo"><img src="assets/img/varaince-logo.png" alt="VarAInce logo" /></span>
+          <div class="footer-brand-text">
+            <strong>VarAInce</strong>
+            <span>Official AI &amp; DS Club — BMSCE</span>
+          </div>
+          <div class="footer-bmsce-divider" aria-hidden="true"></div>
+          <div class="footer-bmsce">
+            <a href="https://bmsce.ac.in" target="_blank" rel="noopener"
+              aria-label="B.M.S. College of Engineering website">
+              <img src="assets/img/bmsce-logo.png" alt="B.M.S. College of Engineering" height="36" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Explore</h5>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Club</h5>
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="https://www.instagram.com/varaince_bmsce/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://bmsce.ac.in" target="_blank" rel="noopener">BMSCE</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Department</h5>
+            <ul>
+              <li>Artificial Intelligence &amp; Data Science</li>
+              <li>Established 2022</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VarAInce — AI &amp; Data Science Club, B.M.S. College of Engineering, Bengaluru.</p>
+        <a class="footer-social" href="https://www.instagram.com/varaince_bmsce/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+          </svg>
+          @varaince_bmsce
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- ============================== PREMIUM ANIMATION LIBS (CDN) ============================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/premium.js"></script>
+</body>
+
+</html>
