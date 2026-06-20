@@ -228,9 +228,9 @@ function Hero({ reducedMotion }) {
     visible: { opacity: 1, y: 0 },
   };
 
-  // Feature the most recent / upcoming event as a "next up" badge.
-  const next = events[events.length - 1];
-  const nextYear = (next.date.match(/\b20\d{2}\b/) || [""])[0];
+  // Feature the most recent event the club has run as a "latest" badge.
+  const latest = events[events.length - 1];
+  const latestYear = (latest.date.match(/\b20\d{2}\b/) || [""])[0];
 
   return (
     <section className="hero" id="top">
@@ -280,13 +280,13 @@ function Hero({ reducedMotion }) {
         transition={{ delay: 1, duration: 0.8, ease: EASE }}
       >
         <span className="chip-head">
-          <span className="eyebrow">Next up</span>
+          <span className="eyebrow">Latest event</span>
           <ArrowUpRight size={15} />
         </span>
         <strong>
-          {next.title} {nextYear}
+          {latest.title} {latestYear}
         </strong>
-        <small>{next.theme}</small>
+        <small>{latest.theme}</small>
       </motion.a>
 
       <div className="hero-scroll" aria-hidden="true">
