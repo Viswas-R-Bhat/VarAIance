@@ -228,6 +228,10 @@ function Hero({ reducedMotion }) {
     visible: { opacity: 1, y: 0 },
   };
 
+  // Feature the most recent / upcoming event as a "next up" badge.
+  const next = events[events.length - 1];
+  const nextYear = (next.date.match(/\b20\d{2}\b/) || [""])[0];
+
   return (
     <section className="hero" id="top">
       <Scene reducedMotion={reducedMotion} />
@@ -268,16 +272,22 @@ function Hero({ reducedMotion }) {
         </motion.div>
       </motion.div>
 
-      <motion.div
+      <motion.a
         className="hero-chip"
+        href="#events"
         initial={{ opacity: 0, y: 24, x: 18 }}
         animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ delay: 1, duration: 0.8, ease: EASE }}
       >
-        <span className="eyebrow">live signal</span>
-        <strong>Variance field</strong>
-        <small>Cursor-reactive neural constellation · {events[0].metrics[0][0]} builders mapped</small>
-      </motion.div>
+        <span className="chip-head">
+          <span className="eyebrow">Next up</span>
+          <ArrowUpRight size={15} />
+        </span>
+        <strong>
+          {next.title} {nextYear}
+        </strong>
+        <small>{next.theme}</small>
+      </motion.a>
 
       <div className="hero-scroll" aria-hidden="true">
         <span />
